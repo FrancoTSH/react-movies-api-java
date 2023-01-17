@@ -40,9 +40,7 @@ public class UserService implements IUserService {
   @Override
   public UserDTO update(long id, UserDTO user) {
     User userEntity = this.userRepository.findById(id).orElseThrow(EntityNotFoundException::new);
-    System.out.println(userEntity);
     this.mapper.map(user, userEntity);
-    System.out.println(userEntity);
     return this.mapper.map(this.userRepository.save(userEntity), UserDTO.class);
   }
 
