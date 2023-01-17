@@ -1,0 +1,19 @@
+{
+  "properties": [
+    {
+      "name": "jwt.secret",
+      "type": "java.lang.String",
+      "description": "A description for 'jwt.secret'"
+    },
+    {
+      "name": "jwt.expires_in",
+      "type": "java.lang.String",
+      "description": "A description for 'jwt.expires_in'"
+    },
+    {
+      "name": "storage.destination",
+      "type": "java.lang.String",
+      "description": "A description for 'storage.destination'"
+    }
+  ]
+}
